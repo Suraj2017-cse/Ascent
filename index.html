@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent Task</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap Css CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    img {
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .title::after {
+        content: "0";
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        background-color: #13A14A;
+        padding: 0 .2rem;
+        font-size: 15px;
+        color: #ffffff;
+        border-radius: .3rem;
+    }
+    .pacifico{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.9rem;
+    }
+    .fixed{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width:768px) {
+        .container {
+            width: 90%;
+        }
+
+        .responsive {
+            display: none !important;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class=" col-md-3">
+                <div class="brand">
+                    <img src="ascent/LOGO.png" class="w-50" alt="logo">
+                </div>
+            </div>
+            <div class=" col-md-3">
+                <ul class="d-flex list-unstyled">
+                    <li class="p-2"><i class="p-2 rounded-5 fa-brands fa-twitter"
+                            style="color: #ffffff; background-color: #1DA1F2;"></i></li>
+                    <li class="p-2"><i class="p-2 rounded-5 fa-brands fa-facebook"
+                            style="color: #ffffff; background-color: #4867AA;"></i></li>
+                    <li class="p-2"><i class="p-2 rounded-5 fa-brands fa-pinterest"
+                            style="color: #ffffff; background-color: #B7081B;"></i></li>
+                    <li class="p-2"><i class="p-2 rounded-5 fa-brands fa-instagram"
+                            style="color: #ffffff; background-color: #000000;"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3  d-flex gap-3">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="text-muted">Contact Us</span>
+                    <span>+91 98200 48453</span>
+                </div>
+            </div>
+            <div class=" col-md-3 d-flex gap-3">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="text-muted">Send Email</span>
+                    <span>ascenttuts@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="position-sticky top-0">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-4"
+                style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; z-index: 9999 !important;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <a class="navbar-brand" href="#">Courses <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                    <a class="navbar-brand" href="#">Resources <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" style="border-right: 1px solid #808080;">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user"></i>
+                                    Sing in / Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"
+                                        style="transform: rotate(90deg);"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link position-relative" href="#">
+                                    <span class="title rounded-5"></span>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+
+
+     <main class="position-relative z-n1">
+        <section>
+            <div class="position-relative" style="background-color: #F0E6D4; height: 655px; z-index: 1 !important;">
+                <div class="icon position-absolute" style="top: -30px; left: -100px;">
+                    <img src="ascent/1st slide Circle.png" class="w-50" alt="Circle">
+                </div>
+                <div class="hero-item container d-flex">
+                    <div class="hero-text mt-5 d-flex flex-column justify-content-center">
+                        <h4 class="text-center pacifico">Ready to learn ?</h4>
+                        <h1 class="text-capitalize fw-bolder text-success" style="font-size: 3rem;">want to unbox the
+                            <br> secret to learning <br> right ?</h1>
+                        <p>join us today and get one stepcloser to your academic golas</p>
+                        <button class="btn btn-success text-uppercase w-50">discover more</button>
+                    </div>
+                    <div class="position-relative">
+                        <img src="ascent/Bulb Icon.png" class="position-absolute" alt="Bulb"
+                            style="width:80px; top: 50%; left: 15%;">
+                        <img src="ascent/1st Slide Image.png" class="w-100" alt="img">
+                        <img src="ascent/Graph Icon.png" class="position-absolute" alt="Graph"
+                            style="width: 80px; bottom: 5px; right: 30px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="max-width: 1300px; margin: 10px auto;">
+            <div class="row">
+                <div class="col-md-6 d-flex gap-1">
+                    <img src="ascent/2nd Slide Image 1.jpg" class="rounded-3" alt="Img" style="-webkit-box-shadow: -36px 0px 0px -18px rgba(36,87,49,1);
+                    -moz-box-shadow: -36px 0px 0px -18px rgba(36,87,49,1);
+                    box-shadow: -36px 0px 0px -18px rgba(36,87,49,1);">
+                    <div class="position-relative">
+                        <img src="ascent/2nd Slide Image 2.jpg" class="rounded-3" alt="Img" style="min-height: 100%;">
+                        <div class="bg-white responsive d-flex gap-1 position-absolute p-4 rounded-2"
+                            style="width:80%; bottom: 50px; right: -10px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+                            <img src="ascent/Trusted-by-Icon.png" alt="trusted" class="w-25">
+                            <p class="fw-bold">Trusted by 5000 <br> students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-success">About Ascent Tutorials</p>
+                    <h2 class="fs-1 fw-bold">Facts coaching institutes will never tell you</h2>
+                    <p>Top institutes which tutor thousands of students under one roof have no doubt perfected the art
+                        of teaching students on a mass scale, and have glorious results to display but are they frank
+                        enough about:</p>
+                    <ul class="list-unstyled gap-1 d-flex flex-column">
+                        <li class="d-flex gap-2"><i class="bg-success p-1 rounded-5 fa-solid fa-chevron-right"
+                                style="color: #ffffff;"></i>
+                            <p class="m-0">their success rates?</p>
+                        </li>
+                        <li class="d-flex gap-2"><i class="bg-success p-1 rounded-5 fa-solid fa-chevron-right"
+                                style="color: #ffffff;"></i>
+                            <p class="m-0">levels of stress students have to endure for two years?</p>
+                        </li>
+                        <li class="d-flex gap-2"><i class="bg-success p-1 rounded-5 fa-solid fa-chevron-right"
+                                style="color: #ffffff;"></i>
+                            <p class="m-0">treating their star performers & other students equally?</p>
+                        </li>
+                    </ul>
+                    <p>If you get a glimpse at the enrollment count, you’ll notice how their success ratios could run
+                        into fractions!</p>
+                </div>
+            </div>
+        </section>
+
+    </main> 
+
+
+
+
+    <script src="https://kit.fontawesome.com/2e908ec99e.js" crossorigin="anonymous"></script>
+    <!-- bootstrap JS CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
